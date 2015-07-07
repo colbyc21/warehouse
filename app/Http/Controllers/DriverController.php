@@ -23,8 +23,9 @@ class DriverController extends Controller
      */
     public function index()
     {
-        $drivers = Driver::all();
-        return view('drivers.index')->with('drivers', $drivers);
+        return "I've moved to /code";
+        //$drivers = Driver::all();
+        //return view('drivers.index')->with('drivers', $drivers);
     }
 
     /**
