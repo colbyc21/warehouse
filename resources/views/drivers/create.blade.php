@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('content')
 
-<h1>Create List</h1>
+<h1>Add Driver</h1>
 
 <!-- Present Errors -->
 @if (count($errors) > 0)
@@ -15,9 +15,8 @@
 @endif
 
 <!-- Create List Form -->
-	{!! Form::model($list, array('route' => ['todos.update', $list->id], 'method' => 'PUT') ) !!}
-		{!! Form::label('name', 'List Title') !!}
-		{!! Form::text('name') !!}
-		{!! Form::submit('Update', array('class' => 'button') ) !!}
-	{!! Form::close() !!}
+    {!! Form::open(array('route' => 'drivers.store') ) !!}
+       @include('drivers.partials._form')
+    {!! Form::close() !!}
+ 
 @stop

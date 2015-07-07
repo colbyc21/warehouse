@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Foundation | Welcome</title>
+        <title>Long Distribution</title>
         <link rel="stylesheet" href="{{asset('css/foundation.css')}}" />
         <script src="{{asset('js/vendor/modernizr.js')}}"></script>
     </head>
@@ -15,7 +15,7 @@
     <nav class="top-bar" data-topbar>
         <ul class="title-area">
             <li class="name">
-                <h1><a href="#">ODOT</a></h1>
+                <h1><a href="http://warehouse.dev">Warehouse</a></h1>
             </li>
         </ul>
     </nav>
@@ -49,6 +49,7 @@
     </footer>
 
     <script type="text/javascript" src="{{ URL::asset('js/vendor/jquery.js') }}"></script>
+    <script type="text/javascript" src="{{ URL::asset('js/app.js') }}"></script>
     <script type="text/javascript" src="{{ URL::asset('js/foundation.min.js') }}"></script>
     
     <script>

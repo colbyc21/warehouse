@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTodoListsTable extends Migration
+class CreateDriverIssuesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,9 +12,11 @@ class CreateTodoListsTable extends Migration
      */
     public function up()
     {
-        Schema::create('todo_lists', function (Blueprint $table) {
+        Schema::create('driver_issues', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name')->unique();
+            $table->integer('driver_id');
+            $table->string('content')->unique();
+            $table->dateTime('resolved_on')->nullable();
             $table->timestamps();
         });
     }
@@ -26,6 +28,6 @@ class CreateTodoListsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('todo_lists');
+        Schema::drop('driver_issues');
     }
 }

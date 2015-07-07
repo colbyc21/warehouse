@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('content')
 
-<h1>Create List</h1>
+<h1>Add Issue</h1>
 
 <!-- Present Errors -->
 @if (count($errors) > 0)
@@ -15,9 +15,8 @@
 @endif
 
 <!-- Create List Form -->
-	{!! Form::open(array('route' => 'todos.store') ) !!}
-		{!! Form::label('title', 'List Title') !!}
-		{!! Form::text('title') !!}
-		{!! Form::submit('submit', array('class' => 'button') ) !!}
-	{!! Form::close() !!}
+{!! Form::open(array('route' => ['drivers.issues.store', $driver->id]) ) !!}
+       @include('issues.partials._form')
+    {!! Form::close() !!}
+ 
 @stop
