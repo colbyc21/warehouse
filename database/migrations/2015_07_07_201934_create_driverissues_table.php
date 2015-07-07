@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateDriverIssuesTable extends Migration
+class CreateDriverissuesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -28,6 +28,6 @@ class CreateDriverIssuesTable extends Migration
      */
     public function down()
     {
-        Schema::drop('driver_issues');
+        Schema::drop('driverissues');
     }
 }

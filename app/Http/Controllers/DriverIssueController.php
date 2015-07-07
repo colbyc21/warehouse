@@ -34,21 +34,12 @@ class DriverIssueController extends Controller
 
     /**
      * Store a newly created resource in storage.
-     * @param Request $driver_id
+     * @param Request $id
      * @return Response
      */
-    public function store(Request $driver_id)
+    public function store(Request $id)
     {
-       $driver  = Driver::findOrFail($driver_id);
-        return $driver;
-       $this->validate($driver_id, [
-            'content' => 'required'
-            ]);
-
-        $issue = new DriverIssues();
-        $issue->content = Input::get('content');
-        $driver->listIssues()->save($issue);
-        return Redirect::route('drivers.show', $driver->id)->with('status', 'Issue Aded');
+       return $id;
     }
 
     /**

@@ -1,3 +1,3 @@
-{!! Form::label('content', 'Issue Comment') !!}
+{!! Form::label('content', 'Issue') !!}
 {!! Form::text('content') !!}
-{!! Form::submit('update', array('class' => 'button') ) !!}
+{!! Form::submit('submit', array('class' => 'button') ) !!}

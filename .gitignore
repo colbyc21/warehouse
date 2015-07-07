@@ -2,6 +2,7 @@
 /vendor
 /node_modules
 
+de_helper.php
 
 
 /bootstrap/compiled.php

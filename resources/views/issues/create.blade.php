@@ -15,7 +15,7 @@
 @endif
 
 <!-- Create List Form -->
-{!! Form::open(array('route' => ['drivers.issues.store', $driver->id]) ) !!}
+{!! Form::open(array('route' => ['drivers.issues.store', $driver_id->id]) ) !!}
        @include('issues.partials._form')
     {!! Form::close() !!}
  
