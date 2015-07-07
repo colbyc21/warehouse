@@ -1,11 +1,11 @@
-<<<<<<< HEAD
+
 /vendor
 /node_modules
-.env
 
-=======
+
+
 /bootstrap/compiled.php
 .env.*.php
 .env.php
 .env
->>>>>>> 1fadc8f5c9b5c2a8fe498a8f022fc18db68275dd
+.idea
