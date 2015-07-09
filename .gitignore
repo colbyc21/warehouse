@@ -8,4 +8,4 @@ ide_helper.php
 .env.*.php
 .env.php
 .env
-/.idea
+.idea
